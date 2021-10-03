@@ -5,7 +5,6 @@ body {
   color: #999999;
   font-family: "Roboto", sans-serif;
 }
-
 .wrapper {
   width: 1920px;
   margin: 0px auto;
@@ -27,9 +26,6 @@ body {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
-.main-nav {
-  width: 491px;
-}
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -39,6 +35,9 @@ body {
 .nav-item {
   list-style: none;
   text-transform: uppercase;
+}
+.nav-item:not(:nth-child(5n)) {
+  margin-right: 55px;
 }
 .nav-link {
   display: flex;
@@ -69,12 +68,6 @@ body {
   background-color: rgba(249, 129, 129, 1);
   transform: translateY(10px);
 }
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px;
-}
 .title {
   font-size: 24px;
   line-height: 29px;
@@ -104,6 +97,9 @@ figure {
   margin-bottom: 65px;
 }
 .conteiner-for-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1186px;
   margin: 0px auto;
   margin-bottom: 96px;
@@ -139,6 +135,9 @@ figure {
   margin: 0px;
 }
 .conteiner-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 80px;
 }
 .info {
@@ -267,6 +266,7 @@ figure {
 }
 .info-creater {
   color: #f6a1a1;
+  text-decoration: none;
 }
 .footer-button{
   border: none;
